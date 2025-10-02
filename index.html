@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오목 (Gomoku)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header">
+        <h1 class="app__title">오목 (Gomoku)</h1>
+        <div class="status" id="status">
+          <span class="status__label">현재 차례:</span>
+          <span class="status__player" id="current-player">흑</span>
+          <span class="status__dot status__dot--black" id="current-dot" aria-hidden="true"></span>
+        </div>
+      </header>
+
+      <main class="app__main">
+        <div class="board-container">
+          <canvas id="board" width="600" height="600" aria-label="오목 바둑판" role="img"></canvas>
+        </div>
+      </main>
+
+      <footer class="app__footer">
+        <button id="reset-btn" type="button" class="button">초기화</button>
+      </footer>
+    </div>
+
+    <noscript>이 앱을 사용하려면 JavaScript가 필요합니다.</noscript>
+    <script type="module" src="./main.js"></script>
+  </body>
+  </html>
+
